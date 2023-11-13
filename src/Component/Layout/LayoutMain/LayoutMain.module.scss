@@ -1,0 +1,20 @@
+.wrapper{
+    .sidebar{
+        position: fixed;
+        left: 0;
+        width: 220px;
+        top: 0;
+        bottom: 0;
+        padding: 10px 20px;
+        background: #fff;
+        border-right: 1px solid #CECECE;
+    }
+    .container{
+        width: calc(100% - 260px);
+        margin-left: calc(220px + 40px);
+    }
+    .content{
+        // padding: 20px;
+        width: 100%;
+    }
+}

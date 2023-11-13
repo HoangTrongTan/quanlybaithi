@@ -1,0 +1,16 @@
+.wrapper{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    .upload{
+        text-align: center;
+        .upload-child{
+            display: inline-block;
+            width: 40%;
+        }
+    }
+    .btn-upload{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
