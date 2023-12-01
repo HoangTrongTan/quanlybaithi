@@ -1,0 +1,20 @@
+.wrapper{
+    width: 30%;
+    box-shadow:  5px 5px 10px #d3d8d3,
+             -5px -5px 10px #e9eee9;
+    border-radius: 10px;
+    padding: 30px 10px 10px 10px;
+    position: relative;
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        overflow-y: auto;
+        height: 600px;
+        .seacrh{
+            position: absolute;
+            top: -10px;
+
+        }
+    }
+}

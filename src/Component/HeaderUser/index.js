@@ -7,10 +7,18 @@ import {
 } from '@ant-design/icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import MenuUser from '../MenuUser';
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const cx = classNames.bind(style);
 
 function HeaderUser({children ,isHome}) {
   var Layout = isHome ? BgCarousel : "";
+  const navigate = useNavigate();
+      const token = sessionStorage.getItem("token");
+      console.log("token user trang chủ---------------------------", token);
+      if (token === null) {
+          navigate("/login");
+      }
   return (
     <div className={cx("wrapper")}>
       <div className={cx("lien-he")}>

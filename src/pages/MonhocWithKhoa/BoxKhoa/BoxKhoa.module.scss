@@ -1,0 +1,38 @@
+
+.list-mon-khoa{
+    position: relative;
+    min-width: 60%;
+    box-shadow: inset 5px 5px 10px #d3d8d3,
+    inset -5px -5px 10px #e9eee9;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    .wrapper-list{
+        height: 600px;
+        overflow: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 20px;
+    }
+    .cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.2s linear;
+        z-index: -1;
+    }
+    // 585858
+    .drop-hover{
+        background-color: #58585894;
+        color: #fff;
+        z-index: 100;
+        opacity: 1;
+    }
+}

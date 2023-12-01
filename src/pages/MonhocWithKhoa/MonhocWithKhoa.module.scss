@@ -1,0 +1,17 @@
+.wrapper{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    .content{
+        width: 100%;
+        border-radius: 10px;
+        
+        padding: 10px;
+        background-color: #Ffff;
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s linear;
+    }
+}

@@ -3,9 +3,6 @@ import style from "./Sidebar.module.scss";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCake, faHome } from "@fortawesome/free-solid-svg-icons";
-import {
-    MenuUnfoldOutlined,
-  } from '@ant-design/icons';
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -47,6 +44,16 @@ function Sidebar() {
                     icon: <FontAwesomeIcon icon={faCake} />,
                   },
                 ],
+              },
+              {
+                label: "Quản lý thông tin",
+                key: "/qltt",
+                icon: <FontAwesomeIcon icon={faCake} />,
+              },
+              {
+                label: "Quản lý môn học",
+                key: "/mhk",
+                icon: <FontAwesomeIcon icon={faCake} />,
               },
             ]}
           >

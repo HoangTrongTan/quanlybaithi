@@ -1,7 +1,8 @@
 import { useState } from "react";
 import style from "./home.module.scss";
 import classNames from "classnames/bind";
-
+import { useNavigate } from "react-router-dom";
+import * as actions from '../../Util'
 const cx = classNames.bind(style);
 const data = [
   {
@@ -42,6 +43,7 @@ const data = [
   },
 ]
 function Home() {
+  
   const [descr, setDescr] = useState({
     author: "Immanuel Kant",
     text: "“Đọc sách không bằng suy ngẫm. Học trường không hơn được trường đời”",

@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
 body{
     width: 100%;
     height: 100vh;
@@ -10,4 +23,11 @@ body{
         text-decoration: none;
         color: #fff;
     }
+    .ant-tabs-nav{
+        margin: 0 !important;
+    }
+    .ant-table-pagination{
+        justify-content: center !important;
+    }
+    
 }
